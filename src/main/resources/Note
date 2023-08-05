@@ -1,0 +1,25 @@
+Bazı önemli ve yaygın olarak kullanılan aktüatör uç noktaları aşağıda verilmiştir:
+
+uç nokta			Kullanım
+/auditevents		=>	Tüm otomatik yapılandırma adaylarını ve bunların "uygulanma" veya "uygulanmama" nedenlerini döndürür.
+/beans				=>	Uygulamanızdaki tüm Spring fasulyelerinin tam bir listesini döndürür.
+/mappings			=>	Tüm yolların harmanlanmış bir listesini görüntüler @RequestMapping.
+/env				=>	Geçerli ortamdaki özelliklerin listesini döndürür
+/health				=>	Uygulama sağlık bilgilerini döndürür.
+/caches				=>	Kullanılabilir önbellekleri ortaya çıkarır.
+/conditions			=>	Konfigürasyon ve otomatik konfigürasyonda değerlendirilen koşulları gösterir.
+/configprops		=>	Hepsinin harmanlanmış bir listesini görüntüler @ConfigurationProperties.
+/integrationgraph	=>	Yay Entegrasyonu grafiğini gösterir. Bağımlılık gerektirir spring-integration-core.
+/loggers			=>	Uygulamadaki kaydedicilerin konfigürasyonu..
+/scheduledtasks		=>	Uygulamada zamanlanmış görevleri görüntüler.
+/sessions			=>	İzleme günlüklerini döndürür (varsayılan olarak son 100 HTTP isteği). Fasulye gerektirir HttpTraceRepository.
+/httptrace			=>	Spring Session destekli bir oturum deposundan kullanıcı oturumlarının alınmasına ve silinmesine olanak tanır. Spring Session kullanan Servlet tabanlı bir web uygulaması gerektirir.
+/shutdown			=>	Uygulamanın zarif bir şekilde kapanmasına izin verir. Varsayılan olarak devre dışı.
+/threaddump			=>	Bir iş parçacığı dökümü gerçekleştirir.
+/metrics			=>	Kullanılan JVM belleği, sistem CPU kullanımı, açık dosyalar ve çok daha fazlası gibi çeşitli yararlı ölçüm bilgilerini gösterir.
+
+Spring web uygulaması (Spring MVC, Spring WebFlux veya Jersey) aşağıdaki ek uç noktaları sağlar:
+
+uç nokta		Kullanım
+/heapdump	=>	hprofBir yığın dökümü dosyası döndürür .
+/logfile	=>	logging.file.nameveya logging.file.pathözellikleri ayarlanmışsa günlük dosyasının içeriğini döndürür .
