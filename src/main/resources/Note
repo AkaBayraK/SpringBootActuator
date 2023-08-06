@@ -1,3 +1,7 @@
+
+Spring Boot Actuator, uygulamaların production ortamına hazır özellikleri (health check, disk usage, heap dump vs.) otomatik aktifleştirir ve farklı 
+HTTP endpoint’ ler ile etkileşimde bulunmayı sağlayan bir yapı sunar.
+
 Bazı önemli ve yaygın olarak kullanılan aktüatör uç noktaları aşağıda verilmiştir:
 
 uç nokta			Kullanım
@@ -22,4 +26,9 @@ Spring web uygulaması (Spring MVC, Spring WebFlux veya Jersey) aşağıdaki ek 
 
 uç nokta		Kullanım
 /heapdump	=>	hprofBir yığın dökümü dosyası döndürür .
-/logfile	=>	logging.file.nameveya logging.file.pathözellikleri ayarlanmışsa günlük dosyasının içeriğini döndürür .
+/logfile	=>	logging.file.nameveya logging.file.pathözellikleri ayarlanmışsa günlük dosyasının içeriğini döndürür.
+
+Not —
+Herhangi bir endpoint’ e istek yapılırsa 401 (Unauthorized) hatası alınır. Güvenlik kontrolünü disable yapmak için aşağıdaki ifadenin properties dosyasına tanımlanması gerekir.
+management.security.enabled = false
+
