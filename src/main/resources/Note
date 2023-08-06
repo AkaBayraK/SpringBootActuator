@@ -2,6 +2,11 @@
 Spring Boot Actuator, uygulamaların production ortamına hazır özellikleri (health check, disk usage, heap dump vs.) otomatik aktifleştirir ve farklı 
 HTTP endpoint’ ler ile etkileşimde bulunmayı sağlayan bir yapı sunar.
 
+Spring Boot Actuator, bir uygulamanın çalışma zamanında birçok farklı veriyi toplar ve bunları bir REST API aracılığıyla erişilebilir hale getirir. 
+Bu veriler arasında uygulamanın performansı, sağlığı, depolama durumu ve çalışma zamanında değişen diğer özellikler gibi öğeler bulunur.
+
+http://localhost:8081/management/* (health,info,beans,env)
+
 Bazı önemli ve yaygın olarak kullanılan aktüatör uç noktaları aşağıda verilmiştir:
 
 uç nokta			Kullanım
